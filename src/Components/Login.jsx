@@ -34,10 +34,10 @@ function Login({ BASE_URL, handleLoginSuccess }) {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
-      <form onSubmit={handleLoginSubmit}>
+      <form className="login-form" onSubmit={handleLoginSubmit}>
         <div>
           <label htmlFor="loginUsername">Username</label>
           <input
